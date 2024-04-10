@@ -8,13 +8,13 @@ def encode(password):
 
 # kayla added this:
 def decode(encoded_password):
-decoded_password = ''
-for char in encoded_password:
-    if char.isdigit():
-        decoded_password += str((int(char) - 3) % 10)
-    else:
-        decoded_password += char
-return decoded_password
+    decoded_password = ''
+    for char in encoded_password:
+        if char.isdigit():
+            decoded_password += str((int(char) - 3) % 10)
+        else:
+            decoded_password += char
+        return decoded_password
 
 def main():
     while True:
