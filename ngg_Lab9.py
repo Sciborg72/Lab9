@@ -6,7 +6,7 @@ def encode(password):
             encoded_password += str((int(char) + 3) % 10)
     return encoded_password
 
-
+# kayla added this:
 def decode(encoded_password):
 decoded_password = ''
 for char in encoded_password:
